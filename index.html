@@ -11,7 +11,12 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
+    
+    <script src="js/validate.js"></script>
+    
+   
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -641,43 +646,41 @@
         <p>Eum cu tantas legere complectitur, hinc utamur ea eam. Eum patrioque mnesarchum eu, diam erant convenire et vis. Et essent evertitur sea, vis cu ubique referrentur, sed eu dicant expetendis.</p>
         
         
-    <form class="form-horizontal" role="form">
+    <form class="form-horizontal" role="form" id="MyForm">
     
-    <div class="col-xs-12">
-    <div class="form-group col-xs-3 col-xs-push-3 has-success has-feedback">
-    <label class="sr-only" for="Name">Name</label>
-    <input type="text" required="required" class="form-control input-lg" id="Name" placeholder="Yor name here">
+
+    <div class="form-group col-xs-3 col-xs-push-3">
+    
+    <label class="sr-only" for="name">Name</label>
+    <input type="text" class="form-control input-lg" name="name" id="name" placeholder="Yor name here" required = "required" >
     <img src="img/form_path.png" class="img-responsive" alt="fotm_path_name">
     </div>
      
      
     <div class="form-group col-xs-3 col-xs-push-4">
+    
     <label class="sr-only" for="Email">Email</label>
-    <input type="email" required="required" class="form-control col-xs-3 input-lg" id="Email" placeholder="Yor mail here">
-    <img src="img/form_path.png" class="img-responsive" alt="fotm_path_Email">
-    </div>
+    <input type="email"  class="form-control col-xs-3 input-lg" id="email" name="email" placeholder="Yor mail here" required = "required" >
+    <img src="img/form_path.png" class="img-responsive" alt="fotm_path_email">
     </div>
     
     
     <div class="col-xs-12">
-    <div class="form-group col-xs-6 col-xs-push-3">
-    <input type="text" required="required" class="form-control input-lg" id="text_messege" placeholder="Yor messege here">
+    
+    <div class="form-group col-xs-7 col-xs-push-3">
+    <input type="text"  class="form-control input-lg" id="text_messege" placeholder="Yor messege here" required = "required" >
     <img src="img/form_path_messege.png" class="img-responsive" alt="form_path_messege">
     </div>
     </div>
     
-    <div class="form-group col-xs-12">
-    <div class="col-xs-offset-5 col-xs-2">
-      <button type="submit" class="btn btn-lg" id="btn_send">Send messege</button>
+  
+    <div class="col-xs-12">
+    <button type="submit" class="btn btn-lg" name="btn_submit" id="btn_send">Send messege</button>
     </div>
-    </div>
-      
- 
+
     </form> 
+    
     </div>
-    
-    
-    
     
     
    <footer class="row">
@@ -689,12 +692,7 @@
    
    </div>
    
-   
-   
-   
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+
   </body>
 </html>

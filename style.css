@@ -488,7 +488,7 @@ body {
     margin: 20px 150px 100px 150px;
 }
 
-#Name {
+#name {
     background: #131316;
     border: none;
     color: white;
@@ -496,7 +496,7 @@ body {
     box-shadow: none;
 }
 
-#Email {
+#email {
     background: #131316;
     border: none;
     color: white;
@@ -538,14 +538,6 @@ footer > span {
     color: ##00e1ff;
     
 }
-
-
-
-
-
-
-
-
 
 
 
